@@ -2,10 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
 </head>
 <body>
-  <h1>This is Index page</h1>
+  <h1>このページに投稿したtodoを一覧でリスト表示させる</h1>
+  <p>{{ $value }}</p>
+  <a href="post">postページへ移動</a>
 </body>
 </html>

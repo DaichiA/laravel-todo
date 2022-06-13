@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function() {
-    return view('home');
-});
+// Route::get('/', function() {
+//     return view('home');
+// });
+
+Route::get('/', 'App\Http\Controllers\HomeController@index');
+
+Route::get('post', 'App\Http\Controllers\PostController@index');
