@@ -22,7 +22,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'App\Http\Controllers\PostController@index');
-
-Route::get('post', 'App\Http\Controllers\PostController@edit');
-// Route::get('post', 'App\Http\Controllers\PostController@index');
+Route::post('/', 'App\Http\Controllers\PostController@post');
+Route::get('edit', 'App\Http\Controllers\PostController@edit');
 Route::post('post', 'App\Http\Controllers\PostController@post');
