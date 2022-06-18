@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 
-Route::get('/', 'App\Http\Controllers\HomeController@index');
-
-Route::get('post', 'App\Http\Controllers\PostController@index');
+Route::get('/', 'App\Http\Controllers\PostController@index');
+Route::post('/', 'App\Http\Controllers\PostController@post');
+Route::get('edit', 'App\Http\Controllers\PostController@edit');
+Route::post('post', 'App\Http\Controllers\PostController@post');
